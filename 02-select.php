@@ -15,7 +15,7 @@
 
     if ($score >= 90) {
         echo "A++";
-    } elseif($score >= 60) {
+    } elseif ($score >= 60) {
         echo "及格";
     } else {
         echo "不及格";
@@ -23,6 +23,28 @@
 
     ?>
 
+    <h3>多選結構</h3>
+    <?php
+    $level = "B";
+    switch ($level) {
+        case 'A':
+            # code...
+            echo "your grade is A";
+            break;
+        case 'B':
+            # code...
+            echo "your grade is B";
+            break;
+        case 'C':
+            # code...
+            echo "your grade is C";
+            break;
+
+        default:
+            # code...
+            break;
+    }
+    ?>
 </body>
 
 </html>
