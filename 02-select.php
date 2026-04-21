@@ -9,11 +9,13 @@
 
 <body>
     <?php
-    $score = 75;
+    $score = 90;
     echo "成績為:" . $score . "分 <br>";
     echo "判定: ";
 
-    if ($score >= 60) {
+    if ($score >= 90) {
+        echo "A++";
+    } elseif($score >= 60) {
         echo "及格";
     } else {
         echo "不及格";
